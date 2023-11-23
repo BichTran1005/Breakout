@@ -22,6 +22,7 @@ public class GameManager : Singleton<GameManager>
         UIManager.Instance.UpdateScoreText(scores);
         LoadLevel(LevelData);
         StartCoroutine(TimeCountdown());
+        PlayerBar.Instance.ResetPlayerBarPosition();
     }
 
     private void LoadLevel(LevelData levelData)
