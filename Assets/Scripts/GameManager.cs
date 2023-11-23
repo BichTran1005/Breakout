@@ -30,6 +30,7 @@ public class GameManager : Singleton<GameManager>
         GameController.Instance.CreateListBlock(levelData.ColAmount, levelData.BrickAmount);
 
         time = levelData.Time;
+        timeCountdown = time;
         Ball.Instance.SetSpeed(levelData.SpeedBall);
         Ball.Instance.ReStartBall();
     }
